@@ -1,0 +1,40 @@
+function squareDigits(num) {
+    let newString = "";
+    let str = num + "";
+    for(let i = 0; i < str.length; i++) {
+       let a = str[i] * str[i];
+       newString += a;
+    }
+    return newString;
+}
+//document.write(squareDigits(2483));
+
+
+function checkEquals(arr1,arr2) {
+    for(let i = 0; i < arr1.length; i++) {
+        if(arr1[i] !== arr2[i]) {
+            return false;
+        }
+    }
+    return true;
+    
+}
+//document.write(checkEquals([4, 7, 6], [4, 5, 6]));
+
+
+function objectToArray(obj) {
+    let arr = [];
+    for (let k of Object.keys(obj)) {
+        arr.push([k, obj[k]]);
+         
+    }
+    return arr;
+}
+
+/*
+objectToArray({
+  D: 1,
+  B: 2,
+  C: 3
+});
+*/
